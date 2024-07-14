@@ -45,7 +45,7 @@ jobs:
         tags: cypcodestudio/configserver-microservice:latest
   deploy:
     needs: build
-    runs-on: [aws-ec2]
+    runs-on: [ip-172-31-4-6]
     steps:
       - name: Pull Image from docker hub
         run: sudo docker pull configserver-microservice:latest
